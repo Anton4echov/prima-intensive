@@ -436,6 +436,30 @@
             font-size: 1.8rem;
             color: var(--primary);
         }
+
+        /* Дополнительный стиль для блока с кнопкой перед "О программе" */
+        .pre-about-download {
+            background: rgba(184, 59, 94, 0.05);
+            border-radius: 60px;
+            padding: 0.6rem 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border: 1px dashed var(--primary);
+        }
+        .pre-about-download .btn-small {
+            background: var(--secondary);
+            font-size: 0.9rem;
+            padding: 0.5rem 1.2rem;
+            margin: 0;
+        }
+        .pre-about-download span {
+            font-size: 0.9rem;
+            color: var(--primary-dark);
+        }
     </style>
 </head>
 <body>
@@ -463,11 +487,17 @@
 </div>
 
 <main class="container">
+    <!-- НОВАЯ дублированная кнопка скачивания Положения перед блоком "О программе" -->
+    <div class="pre-about-download">
+        <span><i class="fas fa-file-word"></i> Официальные документы интенсива:</span>
+        <a href="https://397ddd96-a82f-4045-8a0c-e45e940c83a3.usrfiles.com/ugd/397ddd_7fcac63caf0041f6ba65511bcf4f12b4.docx" class="btn btn-small download-btn" download><i class="fas fa-download"></i> Скачать Положение (docx)</a>
+    </div>
+
     <section id="about">
         <h2>О программе</h2>
         <p style="font-size:1.05rem;"><strong>Хореография — основа основ.</strong>  Программа повышает мастерство и художественную выразительность, развивает пластику тела, выворотность, гибкость, координацию, устойчивость. Работа синхронно и слаженно — неотъемлемая часть групповых упражнений.</p>
         
-        <!-- НОВЫЙ БЛОК: диплом и индивидуальные 30 минут (текст который нужно добавить) -->
+        <!-- БЛОК: диплом и индивидуальные 30 минут -->
         <div class="highlight-block">
             <div class="highlight-item"><i class="fas fa-award"></i> <span><strong>Личный диплом</strong> каждой участнице</span></div>
             <div class="highlight-item"><i class="fas fa-user-clock"></i> <span><strong>Индивидуальные 30 минут</strong> помимо основных часов (в порядке очереди)</span></div>
@@ -560,7 +590,7 @@
             <div class="info-card"><i class="fas fa-envelope"></i> <strong>Как подать заявку?</strong><br>Напишите на e-mail: <strong>Anastasia_999@inbox.ru</strong> в свободной форме: ФИО участника, дата рождения, чек о предоплате.<br>Копии документов направить не позднее 10 июня 2026 или принести в первый день.</div>
         </div>
         
-        <!-- Кнопка скачивания Положения -->
+        <!-- Основная кнопка скачивания Положения -->
         <div style="text-align: center; margin: 1.5rem 0 0.5rem;">
             <a href="https://397ddd96-a82f-4045-8a0c-e45e940c83a3.usrfiles.com/ugd/397ddd_7fcac63caf0041f6ba65511bcf4f12b4.docx" class="btn download-btn" download><i class="fas fa-download"></i> Скачать официальное Положение</a>
         </div>
@@ -634,7 +664,7 @@
         if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100);
     }
     
-    console.log('PRIMA интенсив | Добавлено: Личный диплом каждой участнице, Индивидуальные 30 минут помимо основных часов');
+    console.log('PRIMA интенсив | Добавлена дублированная кнопка "Скачать Положение" перед блоком О программе');
 </script>
 </body>
 </html>
