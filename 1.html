@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>PRIMA | Интенсив по хореографии в Казани | 22-27 июня 2026</title>
+    <meta name="description" content="Учебно-практический интенсив по хореографии для гимнасток и танцевальных коллективов. Казань, 22-27 июня 2026. Тренеры: Шаталова И.В., Самсонова А.С., Мишина Д.У. Классический станок, современная хореография, постановка номеров.">
+    <meta name="keywords" content="хореография, интенсив, Казань, гимнастика, танцы, мастер-класс, Шаталова, Самсонова, Мишина, классический станок, постановка">
+    <meta property="og:title" content="PRIMA | Интенсив по хореографии в Казани">
+    <meta property="og:description" content="22-27 июня 2026. Повышение мастерства, художественная выразительность, пластика тела.">
+    <meta property="og:image" content="https://static.wixstatic.com/media/397ddd_0e0025295c0743eaa39c452fa431c37e~mv2.jpeg/v1/fill/w_568,h_368,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/397ddd_0e0025295c0743eaa39c452fa431c37e~mv2.jpeg">
+    <meta property="og:type" content="website">
+    <meta name="google-site-verification" content="Vy_7IEiB5LnDvD_vopy0n6hge5lkuvSpSYA_0hAaePQ" />
+    <meta name="yandex-verification" content="5026976788141ade" />
+    <meta property="og:url" content="https://prima-kazan-dance.wixsite.com/welcome">
+    <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/397ddd_0e0025295c0743eaa39c452fa431c37e~mv2.jpeg/v1/fill/w_568,h_368,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/397ddd_0e0025295c0743eaa39c452fa431c37e~mv2.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1e1e2a;
+            background-color: #fefcf5;
+            font-weight: 300;
+            overflow-x: hidden;
+        }
+        
+        /* акцентные цвета — сочные, но элегантные */
+        :root {
+            --primary: #b83b5e;
+            --primary-dark: #8e2a48;
+            --secondary: #2c3e50;
+            --accent-gold: #d4af37;
+            --light-bg: #fff9f0;
+            --text-dark: #2c2c2c;
+            --border-light: #f0e1c6;
+            --card-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* хедер с заглавным фото */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 2rem;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-date {
+            font-size: 1.4rem;
+            font-weight: 300;
+            background: rgba(184, 59, 94, 0.7);
+            display: inline-block;
+            padding: 0.3rem 1.5rem;
+            border-radius: 40px;
+            backdrop-filter: blur(4px);
+            margin: 1rem 0;
+        }
+        
+        .hero-sub {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        /* навигационное меню фикс */
+        .sticky-nav {
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+            background: rgba(255,255,245,0.96);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+        
+        .nav-container a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            padding: 0.3rem 0;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .nav-container a:hover {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        section {
+            margin: 3rem 0;
+            scroll-margin-top: 80px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--primary-dark);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.3px;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 70px;
+            height: 3px;
+            background: var(--accent-gold);
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 1rem;
+        }
+        
+        .coach-card, .info-card {
+            background: white;
+            border-radius: 24px;
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid var(--border-light);
+        }
+        
+        .coach-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+        }
+        
+        /* Стиль для фото тренера */
+        .coach-photo {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--accent-gold);
+            margin-bottom: 0.8rem;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+        }
+        
+        .coach-name {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--primary);
+            margin: 0.5rem 0 0.2rem;
+        }
+        
+        .coach-city {
+            font-weight: 300;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .coach-desc {
+            font-size: 0.9rem;
+            color: #444;
+        }
+        
+        .program-list {
+            background: var(--light-bg);
+            padding: 1.8rem;
+            border-radius: 32px;
+            list-style: none;
+        }
+        
+        .program-list li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            border-bottom: 1px dashed #edd9c0;
+        }
+        
+        .program-list li i {
+            color: var(--primary);
+            width: 24px;
+            font-size: 1rem;
+        }
+        
+        .schedule-table {
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .schedule-row {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #f0e2d0;
+            padding: 1rem 1.5rem;
+        }
+        
+        .schedule-time {
+            width: 180px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .schedule-desc {
+            flex: 1;
+        }
+        
+        /* Все строки теперь единообразные — убираем отдельный класс highlight */
+        
+        .price-block {
+            background: linear-gradient(135deg, #fff5e8, #ffffff);
+            border-radius: 32px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid #f3e1ca;
+        }
+        
+        .price-number {
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .info-text {
+            font-size: 0.95rem;
+            background: #f9f3ea;
+            padding: 1rem 1.5rem;
+            border-radius: 24px;
+            margin-top: 1rem;
+        }
+        
+        footer {
+            background: #1e272e;
+            color: #ddd;
+            padding: 2rem 20px;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 700px) {
+            h1 { font-size: 2rem; }
+            .hero-date { font-size: 1.1rem; }
+            .schedule-row { flex-direction: column; gap: 0.4rem; }
+            .schedule-time { width: auto; }
+            .nav-container { gap: 0.8rem; }
+        }
+        
+        .logo-mini {
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .floating-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--primary);
+            color: white;
+            width: 55px;
+            height: 55px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 99;
+            transition: 0.2s;
+            border: none;
+            font-size: 1.5rem;
+        }
+        
+        .floating-btn:hover {
+            background: var(--primary-dark);
+            transform: scale(1.03);
+        }
+        
+        .vk-link {
+            color: #4a76a8;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .badge {
+            background: var(--accent-gold);
+            color: #2c2c2c;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        
+        hr {
+            margin: 1rem 0;
+            border-color: #f0e1c6;
+        }
+
+        /* Дополнительное расстояние между кнопками */
+        .btn-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        
+        .btn-group .btn {
+            min-width: 200px;
+        }
+        
+        /* Бонус-иконка */
+        .bonus-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-gold);
+            color: #2c2c2c;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <img class="hero-bg" src="https://static.wixstatic.com/media/397ddd_0e0025295c0743eaa39c452fa431c37e~mv2.jpeg/v1/fill/w_568,h_368,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/397ddd_0e0025295c0743eaa39c452fa431c37e~mv2.jpeg" alt="Интенсив по хореографии Казань">
+    <div class="hero-content">
+        <div class="logo-mini"><i class="fas fa-palette"></i> PRIMA | Хореография</div>
+        <h1>Учебно-практический<br>интенсив по хореографии</h1>
+        <div class="hero-date">22 ИЮНЯ — 27 ИЮНЯ 2026 • КАЗАНЬ</div>
+        <p class="hero-sub">Развитие данных, классический станок, современная хореография, постановка номера. Для гимнасток и танцевальных коллективов от 7 до 14 лет.</p>
+    </div>
+</div>
+
+<div class="sticky-nav">
+    <div class="nav-container">
+        <a href="#about">О интенсиве</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#coaches">Тренеры</a>
+        <a href="#program">Программа</a>
+        <a href="#price">Стоимость</a>
+        <a href="#documents">Документы</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+</div>
+
+<main class="container">
+    <!-- Цели и задачи -->
+    <section id="about">
+        <h2>О программе</h2>
+        <p style="font-size:1.05rem;"><strong>Хореография — основа основ.</strong>  Программа повышает мастерство и художественную выразительность, развивает пластику тела, выворотность, гибкость, координацию, устойчивость. Работа синхронно и слаженно — неотъемлемая часть групповых упражнений.</p>
+        <div class="card-grid" style="margin-top: 1.2rem;">
+            <div class="info-card"><i class="fas fa-heart" style="font-size: 2rem; color: var(--primary);"></i><h3 style="margin: 0.5rem 0;">Для кого</h3><p>Гимнастки (художественная гимнастика) и танцевальные коллективы. Возраст 7-14 лет. Группы до 20 человек.</p></div>
+            <div class="info-card"><i class="fas fa-music" style="font-size: 2rem; color: var(--primary);"></i><h3 style="margin: 0.5rem 0;">Результат</h3><p>Чистота движений, пластика, выразительность, правильная осанка, высокий прыжок, устойчивость и творческое мышление.</p></div>
+            <div class="info-card"><i class="fas fa-calendar-alt" style="font-size: 2rem; color: var(--primary);"></i><h3 style="margin: 0.5rem 0;">Место проведения</h3><p>г. Казань, ул. Кави Наджми, д. 1/8. Регистрация: 22 июня 09:30.</p></div>
+        </div>
+    </section>
+
+    <!-- Расписание интенсив - все строки в едином стиле -->
+    <section id="schedule">
+        <h2>Расписание интенсивов</h2>
+        <div class="schedule-table">
+            <div class="schedule-row">
+                <div class="schedule-time">10:00 – 11:30</div>
+                <div class="schedule-desc"><strong>Развитие данных, классический станок</strong> — выворотность, подготовка к вращениям, выравнивание корпуса, стопы, полупальцы.</div>
+            </div>
+            <div class="schedule-row">
+                <div class="schedule-time">11:30 – 13:00</div>
+                <div class="schedule-desc"><strong>Танцевальная практика</strong> — развитие танцевальности, вариации из мировых балетов, работа над выразительностью.</div>
+            </div>
+            <!-- Убрал класс highlight, теперь строка 13:00-15:00 имеет такой же цвет, как остальные -->
+            <div class="schedule-row">
+                <div class="schedule-time">13:00 – 15:00</div>
+                <div class="schedule-desc"><strong>Индивидуальные тренировки</strong> (обед за доп. оплату, индивид. занятия оплачиваются отдельно)</div>
+            </div>
+        </div>
+        <div class="info-text"><i class="fas fa-info-circle"></i> 27 июня – заключительный день с открытым показом. Короткий день, подведение итогов.</div>
+    </section>
+
+    <!-- Тренерский состав с фото -->
+    <section id="coaches">
+        <h2>Тренерский состав</h2>
+        <div class="card-grid">
+            <div class="coach-card">
+                <img class="coach-photo" src="https://static.wixstatic.com/media/397ddd_a0a993ddf1be479ca1aa01c39012f456~mv2.jpeg/v1/fill/w_239,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202025-03-20%20at%2015_08_11.jpeg" alt="Самсонова Анастасия Сергеевна">
+                <div class="coach-name">Самсонова Анастасия Сергеевна</div>
+                <div class="coach-city">г. Казань</div>
+                <div class="coach-desc">Продюсер интенсива. Специалист по современной хореографии, постановкам и танцевальной выразительности. Индивидуальный подход.</div>
+                <a href="https://vk.com/id35347429" target="_blank" style="margin-top: 10px; display: inline-block;"><i class="fab fa-vk"></i> Профиль VK</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программа обучения детально -->
+    <section id="program">
+        <h2>Программа обучения</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+            <ul class="program-list" style="flex: 1;">
+                <li><i class="fas fa-balance-scale"></i> Работа над развитием данных, осознанное исполнение</li>
+                <li><i class="fas fa-sync-alt"></i> Подготовка к простым и сложным вращениям, выравнивание растяжки</li>
+                <li><i class="fas fa-shoe-prints"></i> Постановка равновесий, чистые стопы, высокие полупальцы</li>
+                <li><i class="fas fa-dumbbell"></i> Хореографический станок — система упражнений для техничности</li>
+                <li><i class="fas fa-theater-masks"></i> Танцевальные вариации из мировых балетов, образность</li>
+                <li><i class="fas fa-choreography"></i> Современная хореография отдельным часом, постановка номера</li>
+                <li><i class="fas fa-jump-rope"></i> Прыжки, выворотность, координация, устойчивость</li>
+                <li><i class="fas fa-head-side-medical"></i> Индивидуальный подход к каждой участнице</li>
+            </ul>
+            <div class="info-card" style="flex: 0.4; background: #f9ede2;">
+                <i class="fas fa-headphones-alt"></i>
+                <p style="margin-top: 0.8rem;">Вся программа исполняется под музыку. Развитие музыкальной грамоты, культура движений и творческое мышление.</p>
+                <hr>
+                <div class="bonus-badge"><i class="fas fa-camera-retro"></i> Профессиональная фотосессия в подарок!</div>
+                <p style="margin-top: 0.8rem;"><i class="fas fa-video"></i> Также все видео и фото материалы, сделанные во время интенсива, идут участникам в подарок.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Стоимость (купальник убран, добавлена фотосессия) -->
+    <section id="price">
+        <h2>Стоимость участия</h2>
+        <div class="price-block">
+            <div class="price-number">15 000 ₽</div>
+            <div>полный день (≈526 ₽/час)</div>
+            <p style="margin: 1rem 0;">⭐ <strong>При полной оплате до 7 Июня 2026 — профессиональная фотосессия в подарок!</strong></p>
+            <p>Предоплата для зачисления: <strong>2 000 ₽</strong> (возвращается только в случае перепродажи места). Остаток 100% — до 20.06.2026.</p>
+            <div style="background: #fff2e8; border-radius: 40px; padding: 0.6rem; margin: 1rem 0;">
+                🍽️ Питание: полноценный обед можно заказать у организатора — <strong>600 ₽</strong> (оплачивается отдельно).
+            </div>
+            <a href="#documents" class="btn" style="background: var(--secondary);">Подать заявку →</a>
+        </div>
+        <div class="info-text">Расходы по командированию, проживанию, проезду участников несут командирующие организации / родители.</div>
+    </section>
+
+    <!-- Документы и допуск -->
+    <section id="documents">
+        <h2>Допуск и документы</h2>
+        <div class="card-grid">
+            <div class="info-card"><i class="fas fa-file-signature"></i> <strong>Необходимые документы (копии):</strong><br>✔ Свидетельство о рождении<br>✔ Медицинский полис<br>✔ Медицинская справка о допуске к физическим нагрузкам<br>✔ Страховка от несчастных случаев</div>
+            <div class="info-card"><i class="fas fa-envelope"></i> <strong>Как подать заявку?</strong><br>Напишите на e-mail: <strong>Anastasia_999@inbox.ru</strong> в свободной форме: ФИО участника, дата рождения, чек о предоплате.<br>Копии документов направить не позднее 10 июня 2026 или принести в первый день.</div>
+        </div>
+        <!-- Увеличенное расстояние между кнопками -->
+        <div class="btn-group">
+            <a href="https://vk.ru/club238125150" target="_blank" class="btn btn-outline"><i class="fab fa-vk"></i> Группа VK интенсива</a>
+            <a href="https://prima-kazan-dance.wixsite.com/welcome" target="_blank" class="btn btn-outline"><i class="fas fa-globe"></i> Официальный сайт</a>
+        </div>
+    </section>
+
+    <!-- Контакты и важная информация -->
+    <section id="contacts">
+        <h2>Контакты и поддержка</h2>
+        <div class="schedule-table" style="background: white; padding: 1.5rem;">
+            <p><i class="fas fa-phone-alt"></i> <strong>Продюсер интенсива:</strong> Самсонова Анастасия Сергеевна — <a href="tel:+79173972149" style="color: var(--primary);">+7 917-397-21-49</a></p>
+            <p><i class="fas fa-envelope-open-text"></i> Электронная почта для заявок: <strong>Anastasia_999@inbox.ru</strong></p>
+            <p><i class="fab fa-wix"></i> Сайт: <a href="https://prima-kazan-dance.wixsite.com/welcome" target="_blank">https://prima-kazan-dance.wixsite.com/welcome</a></p>
+            <p><i class="fab fa-vk"></i> Полная программа и новости: <a href="https://vk.ru/club238125150" target="_blank">vk.com/club238125150</a></p>
+            <div class="info-text" style="margin-top: 1rem;">
+                <strong>Важно:</strong> Участники должны иметь тренировочную форму: чёрный купальник на тонких лямках, шорты, белые носки, балетки, сланцы (сменная обувь), резина.
+            </div>
+        </div>
+    </section>
+
+    <!-- Организационные условия -->
+    <div class="info-text" style="background: #fff0e4; margin: 1rem 0 2rem;">
+        <i class="fas fa-check-circle"></i> Количество мест ограничено! Не более 20 человек в группе. После проверки заявки на почту придут реквизиты для оплаты регистрационного взноса. Ждём вас в Казани на ярком хореографическом интенсиве!
+    </div>
+</main>
+
+<footer>
+    <div class="contact-row">
+        <span><i class="fas fa-map-marker-alt"></i> Казань, ул. Кави Наджми, 1/8</span>
+        <span><i class="fas fa-calendar-week"></i> 22–27 июня 2026</span>
+        <span><i class="fas fa-mobile-alt"></i> +7 917-397-21-49</span>
+    </div>
+    <div>© 2026 PRIMA — Хореографический интенсив | Повышение мастерства и художественной выразительности</div>
+    <div style="margin-top: 0.7rem; font-size: 0.8rem;">Каждый участник получит профессиональные фото и видео с интенсива в подарок!</div>
+</footer>
+
+<div class="floating-btn" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+    // плавный скролл к якорям и кнопка наверх
+    document.querySelectorAll('.nav-container a, .btn[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const hash = this.getAttribute('href');
+            if (hash && hash.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(hash);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    history.pushState(null, null, hash);
+                }
+            }
+        });
+    });
+    
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) scrollBtn.style.display = 'flex';
+        else scrollBtn.style.display = 'none';
+    });
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    scrollBtn.style.display = 'none';
+    
+    // при загрузке, если в URL есть якорь
+    if (window.location.hash) {
+        const el = document.querySelector(window.location.hash);
+        if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100);
+    }
+    
+    console.log('PRIMA интенсив | Расписание унифицировано, строка 13:00-15:00 теперь в том же цвете');
+</script>
+</body>
+</html>
