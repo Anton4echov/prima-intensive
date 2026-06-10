@@ -142,7 +142,7 @@
         
         section {
             margin: 3rem 0;
-            scroll-margin-top: 80px;
+            scroll-margin-top: 80px; /* Компенсация для sticky-меню */
         }
         
         h2 {
@@ -436,30 +436,6 @@
             font-size: 1.8rem;
             color: var(--primary);
         }
-
-        /* Дополнительный стиль для блока с кнопкой перед "О программе" */
-        .pre-about-download {
-            background: rgba(184, 59, 94, 0.05);
-            border-radius: 60px;
-            padding: 0.6rem 1.2rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-            gap: 1rem;
-            border: 1px dashed var(--primary);
-        }
-        .pre-about-download .btn-small {
-            background: var(--secondary);
-            font-size: 0.9rem;
-            padding: 0.5rem 1.2rem;
-            margin: 0;
-        }
-        .pre-about-download span {
-            font-size: 0.9rem;
-            color: var(--primary-dark);
-        }
     </style>
 </head>
 <body>
@@ -487,10 +463,9 @@
 </div>
 
 <main class="container">
-    <!-- НОВАЯ дублированная кнопка скачивания Положения перед блоком "О программе" -->
-    <div class="pre-about-download">
-        <span><i class="fas fa-file-word"></i> Официальные документы интенсива:</span>
-        <a href="https://397ddd96-a82f-4045-8a0c-e45e940c83a3.usrfiles.com/ugd/397ddd_7fcac63caf0041f6ba65511bcf4f12b4.docx" class="btn btn-small download-btn" download><i class="fas fa-download"></i> Скачать Положение (docx)</a>
+    <!-- ДУБЛИРОВАННАЯ КНОПКА СКАЧИВАНИЯ ПОЛОЖЕНИЯ (перед "О программе") - полностью идентична той, что в секции документов -->
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+        <a href="https://397ddd96-a82f-4045-8a0c-e45e940c83a3.usrfiles.com/ugd/397ddd_7fcac63caf0041f6ba65511bcf4f12b4.docx" class="btn download-btn" download><i class="fas fa-download"></i> Скачать официальное Положение</a>
     </div>
 
     <section id="about">
@@ -635,6 +610,7 @@
 </div>
 
 <script>
+    // Плавная прокрутка с компенсацией высоты sticky-меню
     document.querySelectorAll('.nav-container a, .btn[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const hash = this.getAttribute('href');
@@ -642,7 +618,12 @@
                 e.preventDefault();
                 const target = document.querySelector(hash);
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    const navHeight = document.querySelector('.sticky-nav').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 10;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
                     history.pushState(null, null, hash);
                 }
             }
@@ -659,12 +640,17 @@
     });
     scrollBtn.style.display = 'none';
     
+    // Обработка якоря из URL при загрузке страницы
     if (window.location.hash) {
-        const el = document.querySelector(window.location.hash);
-        if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100);
+        setTimeout(() => {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                const navHeight = document.querySelector('.sticky-nav').offsetHeight;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 10;
+                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+            }
+        }, 100);
     }
-    
-    console.log('PRIMA интенсив | Добавлена дублированная кнопка "Скачать Положение" перед блоком О программе');
 </script>
 </body>
 </html>
