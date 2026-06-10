@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>PRIMA | Интенсив по хореографии в Казани | 22-27 июня 2026</title>
-    <meta name="description" content="Учебно-практический интенсив по хореографии для гимнасток и танцевальных коллективов. Казань, 22-27 июня 2026. Тренеры: Шаталова И.В., Самсонова А.С., Мишина Д.У. Классический станок, современная хореография, постановка номеров.">
-    <meta name="keywords" content="хореография, интенсив, Казань, гимнастика, танцы, мастер-класс, Шаталова, Самсонова, Мишина, классический станок, постановка">
+    <meta name="description" content="Учебно-практический интенсив по хореографии для гимнасток и танцевальных коллективов. Казань, 22-27 июня 2026. Тренер Самсонова А.С. — специалист по спортивной и классической хореографии. Классический станок, вращения, постановка номеров. Каждому участнику: личный диплом и индивидуальные 30 минут.">
+    <meta name="keywords" content="хореография, интенсив, Казань, гимнастика, танцы, мастер-класс, Самсонова, классический станок, вращения, постановка, диплом, индивидуальные занятия">
     <meta property="og:title" content="PRIMA | Интенсив по хореографии в Казани">
-    <meta property="og:description" content="22-27 июня 2026. Повышение мастерства, художественная выразительность, пластика тела.">
+    <meta property="og:description" content="22-27 июня 2026. Повышение мастерства, художественная выразительность, пластика тела. Личный диплом и индивидуальные 30 минут каждому участнику.">
     <meta property="og:image" content="https://static.wixstatic.com/media/397ddd_0e0025295c0743eaa39c452fa431c37e~mv2.jpeg/v1/fill/w_568,h_368,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/397ddd_0e0025295c0743eaa39c452fa431c37e~mv2.jpeg">
     <meta property="og:type" content="website">
     <meta name="google-site-verification" content="Vy_7IEiB5LnDvD_vopy0n6hge5lkuvSpSYA_0hAaePQ" />
@@ -32,7 +32,6 @@
             overflow-x: hidden;
         }
         
-        /* акцентные цвета — сочные, но элегантные */
         :root {
             --primary: #b83b5e;
             --primary-dark: #8e2a48;
@@ -44,7 +43,6 @@
             --card-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
         }
         
-        /* хедер с заглавным фото */
         .hero {
             position: relative;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -101,7 +99,6 @@
             opacity: 0.9;
         }
         
-        /* навигационное меню фикс */
         .sticky-nav {
             background: white;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -189,6 +186,16 @@
             box-shadow: 0 20px 30px rgba(0,0,0,0.1);
         }
         
+        .coach-photo {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--accent-gold);
+            margin-bottom: 0.8rem;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+        }
+        
         .coach-name {
             font-size: 1.4rem;
             font-weight: 500;
@@ -251,10 +258,6 @@
         
         .schedule-desc {
             flex: 1;
-        }
-        
-        .highlight {
-            background: #fef2e0;
         }
         
         .price-block {
@@ -368,29 +371,70 @@
             transform: scale(1.03);
         }
         
-        .vk-link {
-            color: #4a76a8;
-        }
-        
         a {
             text-decoration: none;
-        }
-        
-        .badge {
-            background: var(--accent-gold);
-            color: #2c2c2c;
-            padding: 0.2rem 1rem;
-            border-radius: 30px;
-            font-size: 0.7rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-left: 10px;
-            vertical-align: middle;
         }
         
         hr {
             margin: 1rem 0;
             border-color: #f0e1c6;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        
+        .btn-group .btn {
+            min-width: 200px;
+        }
+        
+        .bonus-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-gold);
+            color: #2c2c2c;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+
+        .download-btn {
+            background: var(--secondary);
+            margin-top: 0.5rem;
+        }
+        .download-btn:hover {
+            background: #1a2a3a;
+        }
+        
+        .highlight-block {
+            background: linear-gradient(105deg, #faf0e6 0%, #fff5ea 100%);
+            border-left: 5px solid var(--primary);
+            border-radius: 20px;
+            padding: 1rem 1.8rem;
+            margin: 1.5rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 500;
+            color: #2c3e2f;
+        }
+        .highlight-item i {
+            font-size: 1.8rem;
+            color: var(--primary);
         }
     </style>
 </head>
@@ -402,7 +446,7 @@
         <div class="logo-mini"><i class="fas fa-palette"></i> PRIMA | Хореография</div>
         <h1>Учебно-практический<br>интенсив по хореографии</h1>
         <div class="hero-date">22 ИЮНЯ — 27 ИЮНЯ 2026 • КАЗАНЬ</div>
-        <p class="hero-sub">Развитие данных, классический станок, современная хореография, постановка номера. Для гимнасток и танцевальных коллективов от 7 до 14 лет.</p>
+        <p class="hero-sub">Развитие данных, классический станок, авторская методика по вращениям, постановка номера. Для гимнасток и танцевальных коллективов от 7 до 14 лет.</p>
     </div>
 </div>
 
@@ -419,10 +463,17 @@
 </div>
 
 <main class="container">
-    <!-- Цели и задачи -->
     <section id="about">
         <h2>О программе</h2>
         <p style="font-size:1.05rem;"><strong>Хореография — основа основ.</strong>  Программа повышает мастерство и художественную выразительность, развивает пластику тела, выворотность, гибкость, координацию, устойчивость. Работа синхронно и слаженно — неотъемлемая часть групповых упражнений.</p>
+        
+        <!-- НОВЫЙ БЛОК: диплом и индивидуальные 30 минут (текст который нужно добавить) -->
+        <div class="highlight-block">
+            <div class="highlight-item"><i class="fas fa-award"></i> <span><strong>Личный диплом</strong> каждой участнице</span></div>
+            <div class="highlight-item"><i class="fas fa-user-clock"></i> <span><strong>Индивидуальные 30 минут</strong> помимо основных часов (в порядке очереди)</span></div>
+            <div class="highlight-item"><i class="fas fa-camera"></i> <span>Фото + видео в подарок</span></div>
+        </div>
+        
         <div class="card-grid" style="margin-top: 1.2rem;">
             <div class="info-card"><i class="fas fa-heart" style="font-size: 2rem; color: var(--primary);"></i><h3 style="margin: 0.5rem 0;">Для кого</h3><p>Гимнастки (художественная гимнастика) и танцевальные коллективы. Возраст 7-14 лет. Группы до 20 человек.</p></div>
             <div class="info-card"><i class="fas fa-music" style="font-size: 2rem; color: var(--primary);"></i><h3 style="margin: 0.5rem 0;">Результат</h3><p>Чистота движений, пластика, выразительность, правильная осанка, высокий прыжок, устойчивость и творческое мышление.</p></div>
@@ -430,7 +481,6 @@
         </div>
     </section>
 
-    <!-- Расписание интенсив -->
     <section id="schedule">
         <h2>Расписание интенсивов</h2>
         <div class="schedule-table">
@@ -442,61 +492,37 @@
                 <div class="schedule-time">11:30 – 13:00</div>
                 <div class="schedule-desc"><strong>Танцевальная практика</strong> — развитие танцевальности, вариации из мировых балетов, работа над выразительностью.</div>
             </div>
-            <div class="schedule-row highlight">
-                <div class="schedule-time">13:00 – 15:00</div>
-                <div class="schedule-desc"><strong>Индивидуальные тренировки</strong> (обед за доп. оплату, индивид. занятия оплачиваются отдельно)</div>
-            </div>
-            <!--<div class="schedule-row">
-                <div class="schedule-time">15:00 – 16:30</div>
-                <div class="schedule-desc"><strong>Тематические мастер-классы / Современная хореография</strong> — постановка номера, современные техники, хореографический станок.</div>
-            </div>
             <div class="schedule-row">
-                <div class="schedule-time">Вечерние лекции</div>
-                <div class="schedule-desc">Лекции по истории искусства танца от Надежды Дмитриевны Мусиной, педагога Хореографического училища (полная программа в группе VK).</div>
-            </div> -->
+                <div class="schedule-time">13:00 – 15:00</div>
+                <div class="schedule-desc"><strong>Индивидуальные тренировки</strong> (обед за доп. оплату, индивид. занятия оплачиваются отдельно, но по желанию; однако <strong>каждой участнице гарантировано 30 минут персональной работы</strong> в рамках интенсива в порядке очереди — в подарок!)</div>
+            </div>
         </div>
-        <div class="info-text"><i class="fas fa-info-circle"></i> 27 июня – заключительный день с открытым показом. Короткий день, подведение итогов.</div>
+        <div class="info-text"><i class="fas fa-info-circle"></i> 27 июня – заключительный день с открытым показом. Короткий день, подведение итогов. <strong>Каждая участница получает именной диплом о прохождении интенсива.</strong></div>
     </section>
 
-    <!-- Тренерский состав -->
     <section id="coaches">
         <h2>Тренерский состав</h2>
         <div class="card-grid">
-            <!--<div class="coach-card">
-                <i class="fas fa-user-circle" style="font-size: 2.8rem; color: var(--primary);"></i>
-                <div class="coach-name">Шаталова Ирина Владимировна</div>
-                <div class="coach-city">г. Курск</div>
-                <div class="coach-desc">Заслуженный педагог, эксперт по классическому станку и развитию данных. Работа над осознанным исполнением, вращениями, постановка корпуса.</div>
-                <a href="https://vk.com/id42661158" target="_blank" style="margin-top: 10px; display: inline-block;"><i class="fab fa-vk"></i> Профиль VK</a>
-            </div> -->
             <div class="coach-card">
-                <i class="fas fa-user-circle" style="font-size: 2.8rem; color: var(--primary);"></i>
+                <img class="coach-photo" src="https://static.wixstatic.com/media/397ddd_a0a993ddf1be479ca1aa01c39012f456~mv2.jpeg/v1/fill/w_239,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202025-03-20%20at%2015_08_11.jpeg" alt="Самсонова Анастасия Сергеевна">
                 <div class="coach-name">Самсонова Анастасия Сергеевна</div>
                 <div class="coach-city">г. Казань</div>
-                <div class="coach-desc">Продюсер интенсива. Специалист по современной хореографии, постановкам и танцевальной выразительности. Индивидуальный подход.</div>
-                <a href="https://vk.com/id35347429" target="_blank"><i class="fab fa-vk"></i> Профиль VK</a>
+                <div class="coach-desc">Специалист по спортивной и классической хореографии. Автор собственной методики по вращениям.</div>
+                <a href="https://vk.com/id35347429" target="_blank" style="margin-top: 10px; display: inline-block;"><i class="fab fa-vk"></i> Профиль VK</a>
             </div>
-            <!--<div class="coach-card">
-                <i class="fas fa-user-circle" style="font-size: 2.8rem; color: var(--primary);"></i>
-                <div class="coach-name">Мишина Динара Умидовна</div>
-                <div class="coach-city">г. Казань</div>
-                <div class="coach-desc">Хореограф-постановщик. Классический танец, работа над прыжками, равновесиями, выворотностью и чистотой линий.</div>
-                <a href="https://vk.com/dinaramishina" target="_blank"><i class="fab fa-vk"></i> Профиль VK</a>
-            </div> -->
         </div>
     </section>
 
-    <!-- Программа обучения детально -->
     <section id="program">
         <h2>Программа обучения</h2>
         <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
             <ul class="program-list" style="flex: 1;">
                 <li><i class="fas fa-balance-scale"></i> Работа над развитием данных, осознанное исполнение</li>
-                <li><i class="fas fa-sync-alt"></i> Подготовка к простым и сложным вращениям, выравнивание растяжки</li>
+                <li><i class="fas fa-sync-alt"></i> Подготовка к простым и сложным вращениям, выравнивание растяжки (авторская методика)</li>
                 <li><i class="fas fa-shoe-prints"></i> Постановка равновесий, чистые стопы, высокие полупальцы</li>
                 <li><i class="fas fa-dumbbell"></i> Хореографический станок — система упражнений для техничности</li>
                 <li><i class="fas fa-theater-masks"></i> Танцевальные вариации из мировых балетов, образность</li>
-                <li><i class="fas fa-choreography"></i> Современная хореография отдельным часом, постановка номера</li>
+                <li><i class="fas fa-choreography"></i> Постановка номера, работа над синхронностью</li>
                 <li><i class="fas fa-jump-rope"></i> Прыжки, выворотность, координация, устойчивость</li>
                 <li><i class="fas fa-head-side-medical"></i> Индивидуальный подход к каждой участнице</li>
             </ul>
@@ -504,18 +530,20 @@
                 <i class="fas fa-headphones-alt"></i>
                 <p style="margin-top: 0.8rem;">Вся программа исполняется под музыку. Развитие музыкальной грамоты, культура движений и творческое мышление.</p>
                 <hr>
-                <i class="fas fa-video"></i> <strong>Видео и фото в подарок</strong> всем участникам интенсива!
+                <div class="bonus-badge"><i class="fas fa-camera-retro"></i> Профессиональная фотосессия в подарок!</div>
+                <p style="margin-top: 0.8rem;"><i class="fas fa-video"></i> Также все видео и фото материалы, сделанные во время интенсива, идут участникам в подарок.</p>
+                <hr>
+                <p><i class="fas fa-certificate"></i> <strong>Личный диплом каждой участнице</strong> — официальное подтверждение прохождения интенсива.</p>
+                <p style="margin-top: 0.6rem;"><i class="fas fa-user-graduate"></i> <strong>Индивидуальные 30 минут</strong> (в порядке очереди, помимо основных часов) — персональная работа над сложными элементами.</p>
             </div>
         </div>
     </section>
 
-    <!-- Стоимость -->
     <section id="price">
         <h2>Стоимость участия</h2>
         <div class="price-block">
             <div class="price-number">15 000 ₽</div>
-            <div>полный день (≈526 ₽/час)</div>
-            <p style="margin: 1rem 0;">⭐ <strong>При полной оплате до 7 Июня 2026</strong> — гимнастический купальник в подарок!</p>
+            <p style="margin: 1rem 0;">⭐ <strong>профессиональная фотосессия в подарок!</strong><br>⭐ <strong>личный диплом + индивидуальные 30 минут каждому участнику (очередность)</strong></p>
             <p>Предоплата для зачисления: <strong>2 000 ₽</strong> (возвращается только в случае перепродажи места). Остаток 100% — до 20.06.2026.</p>
             <div style="background: #fff2e8; border-radius: 40px; padding: 0.6rem; margin: 1rem 0;">
                 🍽️ Питание: полноценный обед можно заказать у организатора — <strong>600 ₽</strong> (оплачивается отдельно).
@@ -525,20 +553,24 @@
         <div class="info-text">Расходы по командированию, проживанию, проезду участников несут командирующие организации / родители.</div>
     </section>
 
-    <!-- Документы и допуск -->
     <section id="documents">
         <h2>Допуск и документы</h2>
         <div class="card-grid">
             <div class="info-card"><i class="fas fa-file-signature"></i> <strong>Необходимые документы (копии):</strong><br>✔ Свидетельство о рождении<br>✔ Медицинский полис<br>✔ Медицинская справка о допуске к физическим нагрузкам<br>✔ Страховка от несчастных случаев</div>
             <div class="info-card"><i class="fas fa-envelope"></i> <strong>Как подать заявку?</strong><br>Напишите на e-mail: <strong>Anastasia_999@inbox.ru</strong> в свободной форме: ФИО участника, дата рождения, чек о предоплате.<br>Копии документов направить не позднее 10 июня 2026 или принести в первый день.</div>
         </div>
-        <div style="text-align: center; margin-top: 1.5rem;">
-            <a href="https://vk.ru/club238125150" target="_blank" class="btn btn-outline" style="margin-right: 1rem;"><i class="fab fa-vk"></i> Группа VK интенсива</a>
+        
+        <!-- Кнопка скачивания Положения -->
+        <div style="text-align: center; margin: 1.5rem 0 0.5rem;">
+            <a href="https://397ddd96-a82f-4045-8a0c-e45e940c83a3.usrfiles.com/ugd/397ddd_7fcac63caf0041f6ba65511bcf4f12b4.docx" class="btn download-btn" download><i class="fas fa-download"></i> Скачать официальное Положение</a>
+        </div>
+
+        <div class="btn-group">
+            <a href="https://vk.ru/club238125150" target="_blank" class="btn btn-outline"><i class="fab fa-vk"></i> Группа VK интенсива</a>
             <a href="https://prima-kazan-dance.wixsite.com/welcome" target="_blank" class="btn btn-outline"><i class="fas fa-globe"></i> Официальный сайт</a>
         </div>
     </section>
 
-    <!-- Контакты и важная информация -->
     <section id="contacts">
         <h2>Контакты и поддержка</h2>
         <div class="schedule-table" style="background: white; padding: 1.5rem;">
@@ -547,14 +579,14 @@
             <p><i class="fab fa-wix"></i> Сайт: <a href="https://prima-kazan-dance.wixsite.com/welcome" target="_blank">https://prima-kazan-dance.wixsite.com/welcome</a></p>
             <p><i class="fab fa-vk"></i> Полная программа и новости: <a href="https://vk.ru/club238125150" target="_blank">vk.com/club238125150</a></p>
             <div class="info-text" style="margin-top: 1rem;">
-                <strong>Важно:</strong> Участники должны иметь тренировочную форму: чёрный купальник на тонких лямках, шорты, белые носки, балетки, сланцы (сменная обувь), резина.
+                <strong>Важно:</strong> Участники должны иметь тренировочную форму: чёрный купальник на тонких лямках, шорты, белые носки, балетки, сланцы (сменная обувь), резина.<br>
+                ✨ <strong>Каждой участнице:</strong> личный диплом по окончании + 30 минут индивидуальной работы с тренером в порядке очереди (включено в стоимость).
             </div>
         </div>
     </section>
 
-    <!-- Организационные условия -->
     <div class="info-text" style="background: #fff0e4; margin: 1rem 0 2rem;">
-        <i class="fas fa-check-circle"></i> Количество мест ограничено! Не более 20 человек в группе. После проверки заявки на почту придут реквизиты для оплаты регистрационного взноса. Ждём вас в Казани на ярком хореографическом интенсиве!
+        <i class="fas fa-check-circle"></i> Количество мест ограничено! Не более 20 человек в группе. После проверки заявки на почту придут реквизиты для оплаты регистрационного взноса. <strong>Не упустите уникальную возможность: диплом, индивидуальный подход и 30 минут личного внимания каждому участнику.</strong> Ждём вас в Казани на ярком хореографическом интенсиве!
     </div>
 </main>
 
@@ -565,7 +597,7 @@
         <span><i class="fas fa-mobile-alt"></i> +7 917-397-21-49</span>
     </div>
     <div>© 2026 PRIMA — Хореографический интенсив | Повышение мастерства и художественной выразительности</div>
-    <div style="margin-top: 0.7rem; font-size: 0.8rem;">Все фото и видео материалы, сделанные во время интенсива, идут участникам в подарок.</div>
+    <div style="margin-top: 0.7rem; font-size: 0.8rem;">Каждый участник получит профессиональные фото и видео с интенсива в подарок + личный диплом + индивидуальные 30 минут!</div>
 </footer>
 
 <div class="floating-btn" id="scrollTopBtn">
@@ -573,7 +605,6 @@
 </div>
 
 <script>
-    // плавный скролл к якорям и кнопка наверх
     document.querySelectorAll('.nav-container a, .btn[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const hash = this.getAttribute('href');
@@ -598,14 +629,12 @@
     });
     scrollBtn.style.display = 'none';
     
-    // при загрузке, если в URL есть якорь
     if (window.location.hash) {
         const el = document.querySelector(window.location.hash);
         if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100);
     }
     
-    // простой счетчик / напоминание в консоли
-    console.log('Сайт PRIMA Интенсив | Хореография в Казани 22-27 июня 2026');
+    console.log('PRIMA интенсив | Добавлено: Личный диплом каждой участнице, Индивидуальные 30 минут помимо основных часов');
 </script>
 </body>
 </html>
